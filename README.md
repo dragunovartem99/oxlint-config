@@ -7,8 +7,13 @@ This configuration focuses on **correctness** and **safety**, keeping style opin
 
 - Correctness and suspicious rules as errors
 - Pedantic and performance rules as warnings
-- Style, restriction, and nursery rules disabled
-- Broad plugin coverage (eslint, typescript, unicorn, oxc, jsdoc, node, promise, vitest, vue)
+- Style, restriction, and nursery rules disabled, except a few hand-picked ones:
+    - `max-lines` at 99 lines of real code (blank lines and comments not counted)
+    - Type imports written as top-level `import type { A }`
+    - No duplicate imports, mutable exports, chained assignments, or identical test titles
+    - `vue/require-typed-ref` as an error, `vue/define-props-destructuring` as a warning
+- Broad plugin coverage (eslint, typescript, unicorn, oxc, jsdoc, node, promise, vitest, vue, import)
+- Type-aware rules are not enabled
 
 ## Installation
 
