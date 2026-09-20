@@ -37,6 +37,7 @@ var t = e({
 		"typescript/consistent-type-imports": ["error", { fixStyle: "separate-type-imports" }],
 		"typescript/no-empty-object-type": ["error", { allowInterfaces: "with-single-extends" }],
 		"typescript/no-import-type-side-effects": "error",
+		"unicorn/no-useless-undefined": "off",
 		"vitest/no-identical-title": "error",
 		"vue/define-props-destructuring": "warn",
 		"vue/require-typed-ref": "error"

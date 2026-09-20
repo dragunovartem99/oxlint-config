@@ -44,6 +44,10 @@ export default defineConfig({
 		"typescript/no-empty-object-type": ["error", { allowInterfaces: "with-single-extends" }],
 
 		"typescript/no-import-type-side-effects": "error",
+
+		// Its autofix turns `return undefined` into a bare `return`, which `vue/return-in-computed-property` rejects.
+		"unicorn/no-useless-undefined": "off",
+
 		"vitest/no-identical-title": "error",
 		"vue/define-props-destructuring": "warn",
 		"vue/require-typed-ref": "error",
