@@ -58,3 +58,13 @@ For creating similar configurations, see:
 
 - [oxlint's configuration docs](https://oxc.rs/docs/guide/usage/linter/config.html)
 - [npm's documentation on scoped packages](https://docs.npmjs.com/creating-and-publishing-scoped-public-packages)
+
+## Development
+
+```sh
+npm ci
+```
+
+Pull requests run `format:check`, `types:check` and `lint:check`, and so does the pre-commit hook.
+Merging to `main` with a pending changeset (`npx changeset`) opens a release PR that publishes to npm
+once merged

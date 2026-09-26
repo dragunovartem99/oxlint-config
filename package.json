@@ -35,10 +35,15 @@
 		"format": "oxfmt --write",
 		"format:check": "oxfmt --check",
 		"lint": "oxlint --fix",
-		"lint:check": "oxlint"
+		"lint:check": "oxlint",
+		"prepare": "husky",
+		"prepublishOnly": "npm run build",
+		"types:check": "tsc --noEmit"
 	},
 	"devDependencies": {
+		"@changesets/cli": "^3.0.3",
 		"@dragunovartem99/oxfmt-config": "^2.1.0",
+		"husky": "^9.1.7",
 		"typescript": "~6.0.2",
 		"vite": "^8.1.0"
 	},
