@@ -44,7 +44,7 @@
 		"@changesets/cli": "^3.0.3",
 		"@dragunovartem99/oxfmt-config": "^2.1.0",
 		"husky": "^9.1.7",
-		"typescript": "~6.0.2",
+		"typescript": "~7.0.0",
 		"vite": "^8.1.0"
 	},
 	"peerDependencies": {
