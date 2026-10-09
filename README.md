@@ -9,6 +9,7 @@ This configuration focuses on **correctness** and **safety**, keeping style opin
 - Pedantic and performance rules as warnings
 - Style, restriction, and nursery rules disabled, except a few hand-picked ones:
     - `max-lines` at 99 lines of real code (blank lines and comments not counted)
+    - `dragunovartem99/max-comment-lines` (own JS plugin) warns on a comment block longer than 3 lines
     - Type imports written as top-level `import type { A }`
     - No duplicate imports, mutable exports, chained assignments, or identical test titles
     - `vue/require-typed-ref` as an error, `vue/define-props-destructuring` as a warning
@@ -65,6 +66,6 @@ For creating similar configurations, see:
 npm ci
 ```
 
-Pull requests run `format:check`, `types:check` and `lint:check`, and so does the pre-commit hook.
+Pull requests run `format:check`, `types:check`, `lint:check` and `test`, and so does the pre-commit hook.
 Merging to `main` with a pending changeset (`npx changeset`) opens a release PR that publishes to npm
 once merged

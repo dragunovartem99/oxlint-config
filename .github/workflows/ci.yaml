@@ -10,4 +10,4 @@ jobs:
         with:
             setup: node
             runner: npm run
-            checks: '["format:check", "types:check", "lint:check", "build"]'
+            checks: '["format:check", "types:check", "lint:check", "test", "build"]'

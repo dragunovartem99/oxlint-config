@@ -22,8 +22,12 @@ export default defineConfig({
 		"vue",
 		"import",
 	],
+	// Resolved from the consuming project, where this package is installed.
+	jsPlugins: ["@dragunovartem99/oxlint-config/plugin"],
 	rules: {
 		"eslint/no-multi-assign": "error",
+
+		"dragunovartem99/max-comment-lines": "warn",
 
 		// Counts only real code, so a file's own doc comments don't eat into its budget.
 		"eslint/max-lines": ["error", { max: 99, skipBlankLines: true, skipComments: true }],
